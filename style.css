@@ -1,18 +1,177 @@
 /* variables */
-
+:root{
+    --primary:#201658;
+    --secondary:#1D24CA;
+}
 
 /* reset */
-
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Anta Regular';
+}
+li{
+    list-style-type: none;
+}
 /* font style */
-
+@font-face {
+    font-family: 'Anta Regular';
+    src: url('./assets/font/Anta-Regular.ttf');
+}
+h1{
+    font-size: 1.2em;
+}
+h3{
+    font-size: 1.6em;
+}
+h4{
+    font-size: 1em;
+}
 
 /* base style */
+body{
+font-size: 16px;
+background-color: var(--secondary);
+color: #fff;
+overflow-x: hidden;
+}
+.button{
+    border: none;
+    background-color: transparent;
+    padding: 10px 12px;
+    border: 2px solid #F9E8C9;
+    color: white;
+    border-radius: 20px;
+    display: inline-block;
+}
+.button:hover{
+    background-color: #F9E8C9;
+    color: #201658;
+}
+.site-nav ul{
+    display: none;
+}
+.site-nav h1{
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #fff;
+}
+#welcome{
+    margin-top: 2em;
+}
 
-
+#welcome .welcome-text{
+    margin: 1em;
+    padding: 0 10px;
+}
+.welcome-text h2{
+    margin-bottom: 5px;
+}
+.welcome-text p{
+    margin:10px;
+}
+.welcome-text a{
+    margin-top: 1em;
+}
+a{
+    color: #fff;
+}
 /* mobile styles */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+.site-nav h1{
+    grid-column: 1/5;
+}
+#welcome .welcome-text{
+    grid-column: 1/5;
+}
+#welcome .welcome-img{
+    grid-column: 5/9;
 
-
+}
+.welcome-img img{
+    width: 200%;
+}
+#portfolio{
+    padding: 10px 20px;
+    margin: 1em;
+}
+#portfolio h3{
+text-align: center;
+}
+#portfolio .projects{
+    margin: 2em;
+}
+#portfolio .grid{
+    gap: 2em;
+}
+#portfolio .grid a:nth-child(1){
+    grid-column: 1/9;
+    align-items: center;
+    display: flex;
+    align-self: center;
+}
+#portfolio .grid a:nth-child(2){
+    grid-column: 1/9;
+    /* grid-row: 2; */
+    align-items: center;
+    display: flex;
+    align-self: center;
+}
+#portfolio .grid a:nth-child(3){
+    grid-column: 1/9;
+    /* grid-row: 3; */
+    align-items: center;
+    display: flex;
+    align-self: center;
+}
+#portfolio .grid a{
+    gap: 1em;
+}
+#portfolio .grid a img{
+    max-width: 40%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    height: 40%;
+}
+#skills{
+    margin: 1em;
+    padding: 10px 20px;
+}
+#skills .grid{
+    margin: 1em;
+    gap: 1em;
+    align-items: center;
+}
+#skills .grid li{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#skills h3{
+ text-align: center;
+}
+#skills .grid li:nth-child(1){
+    grid-column: 1/5;
+}
+#skills .grid li:nth-child(2){
+    grid-column: 5/9;
+}
+#skills .grid li:nth-child(3){
+    grid-column: 1/5;
+    grid-row: 2;
+}
+#skills .grid li:nth-child(4){
+    grid-column: 5/9;
+    grid-row: 2;
+}
+.grid li img{
+    height: 50%;
+    max-width:50%;
+}
 /* small tablets styles */
 
 
@@ -20,3 +179,5 @@
 
 
 /* desktop styles */
+
+
